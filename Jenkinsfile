@@ -4,8 +4,7 @@ pipeline {
             stage('Clone Repo') {
                   steps {
 	     echo 'Cloning the Repository'
-	     git branch:'main',url:'https://github.com/deeps848/mynewrep.git
-',credentialsId:'git.cred'
+	     git branch:'main',url:'https://github.com/deeps848/mynewrep.git',credentialsId:'git.cred'
 	 }
             }
              stage('Build') {
